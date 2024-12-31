@@ -6,7 +6,7 @@ Welcome to **HeartCare Project**, a project leveraging **Support Vector Machine 
 
 ## 🚀 Overview
 
-This project addresses the growing demand for accurate diagnostics in healthcare systems. Using patient data like **Age**, **Blood Pressure**, **Cholesterol Levels**, and **Maximum Heart Rate**, we developed three SVM models to classify patients as either at risk or not at risk of heart disease.
+This project addresses the growing demand for accurate diagnostics in healthcare systems. Using historical patient data like **Age**, **Blood Pressure**, **Cholesterol Levels**, and **Maximum Heart Rate**, we developed three SVM models to classify patients as either at risk or not at risk of heart disease.
 
 ![Heart Diagnosis Process](images/heart_diagnosis_process.png)
 
@@ -27,6 +27,8 @@ This project addresses the growing demand for accurate diagnostics in healthcare
 
 ## 📊 Dataset Details
 
+This project leverages historical patient data for analysis and modelling. The dataset includes key features recorded from past medical diagnoses and clinical observations. The project uses this historical data to establish patterns and predictive capabilities for identifying cardiovascular risks.
+
 The dataset used for this project includes the following features:
 
 - **Age**: Patient's age in years.
@@ -40,11 +42,11 @@ The dataset used for this project includes the following features:
 ### Dataset Splits:
 - **Training Data**:
   - Used to train the SVM models.
-  - Contains labeled data for supervised learning.
+  - Contains labelled data for supervised learning.
 - **Test Data**:
   - Used to validate the models' performance on unseen data.
 - **Semi-Supervised Data**:
-  - Includes a mix of labeled and unlabeled data to simulate real-world scenarios where some diagnoses are unknown.
+  - Includes a mix of labelled and unlabeled data to simulate real-world scenarios where some diagnoses are unknown.
 
 ---
 
@@ -101,8 +103,7 @@ From the "\( \lambda \) vs Accuracy" analysis sheet in the dataset, the classifi
    ```bash
    git clone https://github.com/takku-123/Predictive-Heart-Disease-Diagnostics-Using-SVMs.git
    ```
-2. **Open the Excel File**:
-   Use the provided sample dataset and Solver configuration to explore the models.
+2. **Open the Excel File**: Navigate to the repository folder, locate the Excel file, and open it. The file contains the dataset and pre-configured Solver settings necessary for running the SVM models.
 3. **Test Your Data**:
    Replace the sample data with your own dataset to validate predictions.
 4. **Enable Solver Add-In**:
@@ -124,7 +125,6 @@ Prediction: +1 (Heart Disease)
 ```
 
 ---
----
 
 ## 🔮 Future Scope
 
@@ -133,3 +133,5 @@ Prediction: +1 (Heart Disease)
 - Build a web-based application for real-time usage.
 - Utilize larger datasets for extended testing and validation.
 - Integrate a grid search approach for hyperparameter tuning.
+
+---
