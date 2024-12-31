@@ -1,6 +1,6 @@
 # 🫀 Predictive Heart Disease Diagnostics Using SVMs
 
-Welcome to **HeartCareAI**, a project leveraging **Support Vector Machine (SVM)** models to predict cardiovascular risks. This repository provides an innovative approach to diagnosing heart disease using statistical optimization and predictive modeling.
+Welcome to **HeartCare Project**, a project leveraging **Support Vector Machine (SVM)** models to predict cardiovascular risks. This repository provides an innovative approach to diagnosing heart disease using statistical optimization and predictive modeling.
 
 ---
 
@@ -25,6 +25,29 @@ This project addresses the growing demand for accurate diagnostics in healthcare
 
 ---
 
+## 📊 Dataset Details
+
+The dataset used for this project includes the following features:
+
+- **Age**: Patient's age in years.
+- **Resting Blood Pressure (BP)**: Systolic blood pressure measured at rest (mmHg).
+- **Cholesterol**: Serum cholesterol level (mg/dL).
+- **Maximum Heart Rate (MaxHR)**: Maximum heart rate achieved during exercise.
+- **Diagnosis (Label)**:
+  - `+1`: Indicates the presence of heart disease.
+  - `-1`: Indicates no heart disease.
+
+### Dataset Splits:
+- **Training Data**:
+  - Used to train the SVM models.
+  - Contains labeled data for supervised learning.
+- **Test Data**:
+  - Used to validate the models' performance on unseen data.
+- **Semi-Supervised Data**:
+  - Includes a mix of labeled and unlabeled data to simulate real-world scenarios where some diagnoses are unknown.
+
+---
+
 ## 📊 Results & Insights
 
 ![Model Accuracy Chart](images/model_accuracy_chart.png)
@@ -33,10 +56,10 @@ This project addresses the growing demand for accurate diagnostics in healthcare
   - SVM2: 84% on training data, 68% on test data.
   - SVM3: Slightly higher complexity but comparable accuracy.
 - **Optimal Regularization Parameter (\( \lambda \))**:
-  - SVM2: \( \lambda = 1000 \)
-  - SVM3: \( \lambda = 50 \)
+  - SVM2: \( \lambda = 1000 \) - This value balances a wide margin with minimal misclassifications.
+  - SVM3: \( \lambda = 50 \) - A smaller value suitable for mixed labeled and unlabeled datasets.
 
-**Conclusion**: SVM2 was selected for its simplicity, robustness, and reliable optimization.
+**Conclusion**: SVM2 was selected for its simplicity, robustness, and reliable optimization, making it the most practical choice for this diagnostic task.
 
 ---
 
@@ -62,6 +85,9 @@ Where:
 - **Microsoft Excel Spreadsheets**: For data preprocessing and modeling.
 - **Solver Add-In**: Optimized mathematical equations for each model.
 
+### Additional Insights:
+From the "\( \lambda \) vs Accuracy" analysis sheet in the dataset, the classification rates consistently peaked at optimal \( \lambda \) values (SVM2: 1000, SVM3: 50), showing a balance between overfitting and underfitting.
+
 ---
 
 ## 💻 Getting Started
@@ -79,5 +105,31 @@ Where:
    Use the provided sample dataset and Solver configuration to explore the models.
 3. **Test Your Data**:
    Replace the sample data with your own dataset to validate predictions.
+4. **Enable Solver Add-In**:
+   - Navigate to Excel options.
+   - Under Add-Ins, activate Solver.
+   - Ensure Solver settings match those provided in the project documentation.
+
+### Example Input & Output:
+Input sample:
+```
+Age: 55
+BP: 140
+Cholesterol: 220
+MaxHR: 150
+```
+Output:
+```
+Prediction: +1 (Heart Disease)
+```
 
 ---
+---
+
+## 🔮 Future Scope
+
+- Transition to advanced tools like **Python** and **scikit-learn**.
+- Include additional risk factors for more robust diagnostics.
+- Build a web-based application for real-time usage.
+- Utilize larger datasets for extended testing and validation.
+- Integrate a grid search approach for hyperparameter tuning.
