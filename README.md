@@ -64,11 +64,5 @@ Where:
 
 - **Accuracy**: SVM2 provided reliable predictions with minimal overfitting.
 - **Regularization Parameter (λ)**: Fine-tuned for balance between model complexity and classification accuracy.
-
----
-
-## 🚀 Getting Started
-
-1. **Clone this repository**:  
    ```bash
    git clone https://github.com/your-username/HeartCareAI.git
